@@ -1,12 +1,6 @@
-# GitHub Push TODO
+# TODO: Fix npm run build error
 
-## Approved Plan Steps:
-1. [ ] Install GitHub CLI (`brew install gh`)
-2. [ ] Initialize Git repo (`git init`)
-3. [ ] Create .gitignore
-4. [ ] git add . && git commit -m "Initial commit"
-5. [ ] gh auth login
-6. [ ] gh repo create SkipWaste --public --source=. --remote=origin --push
-7. [ ] Verify: git remote -v
-8. [ ] Update TODO.md with completion
-9. [ ] attempt_completion
+1. [x] Understand the error - TypeScript unused variable in ReviewStep.tsx
+2. [x] Edit ReviewStep.tsx and BookingFlow.tsx to remove unused plasterboardOption prop
+3. [x] Verify build succeeds with `cd ui && npm run build`
+4. [x] Complete task
