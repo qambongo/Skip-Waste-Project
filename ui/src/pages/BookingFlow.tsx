@@ -21,7 +21,7 @@ interface BookingState {
   address: Address | null;
   heavyWaste: boolean;
   plasterboard: boolean;
-  plasterboardOption?: string;
+
   skip: Skip | null;
   bookingId: string | null;
 }
@@ -50,14 +50,13 @@ export function BookingFlow() {
 
   const handleWasteTypeNext = (
     heavyWaste: boolean,
-    plasterboard: boolean,
-    plasterboardOption?: string
+    plasterboard: boolean
   ) => {
     setBookingState((prev) => ({
       ...prev,
       heavyWaste,
       plasterboard,
-      plasterboardOption,
+
     }));
     setCurrentStep("skipSelection");
   };
@@ -163,7 +162,7 @@ export function BookingFlow() {
             onNext={handleWasteTypeNext} 
             onBack={handleWasteTypeBack}
             initialWasteType={bookingState.heavyWaste ? "heavy" : bookingState.plasterboard ? "plasterboard" : "general"}
-            initialPlasterboardOption={bookingState.plasterboardOption}
+
           />
         )}
 
@@ -183,7 +182,7 @@ export function BookingFlow() {
             address={bookingState.address}
             heavyWaste={bookingState.heavyWaste}
             plasterboard={bookingState.plasterboard}
-            plasterboardOption={bookingState.plasterboardOption}
+
             skip={bookingState.skip}
             onNext={handleReviewNext}
             onBack={handleReviewBack}
