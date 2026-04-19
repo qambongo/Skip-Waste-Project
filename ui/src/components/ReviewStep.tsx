@@ -5,7 +5,6 @@ interface ReviewStepProps {
   address: Address;
   heavyWaste: boolean;
   plasterboard: boolean;
-  plasterboardOption?: string;
   skip: Skip;
   onNext: () => void;
   onBack: () => void;
@@ -16,7 +15,6 @@ export function ReviewStep({
   address,
   heavyWaste,
   plasterboard,
-  plasterboardOption,
   skip,
   onNext,
   onBack,

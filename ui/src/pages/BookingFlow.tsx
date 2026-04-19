@@ -183,7 +183,7 @@ export function BookingFlow() {
             address={bookingState.address}
             heavyWaste={bookingState.heavyWaste}
             plasterboard={bookingState.plasterboard}
-            plasterboardOption={bookingState.plasterboardOption}
+
             skip={bookingState.skip}
             onNext={handleReviewNext}
             onBack={handleReviewBack}

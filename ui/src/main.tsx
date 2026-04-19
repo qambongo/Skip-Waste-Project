@@ -5,18 +5,13 @@ import App from './App.tsx'
 
 // Initialize MSW (Mock Service Worker)
 async function startApp() {
-  // Start MSW only in development
-  if (process.env.NODE_ENV === 'development') {
-    try {
-      const { worker } = await import('./mocks/browser')
-      console.log('Starting MSW...')
-      await worker.start({
-        onUnhandledRequest: 'bypass',
-      })
-      console.log('MSW started successfully')
-    } catch (error) {
-      console.error('Failed to start MSW:', error)
-    }
+  try {
+    const { worker } = await import('./mocks/browser')
+    await worker.start({
+      onUnhandledRequest: 'bypass',
+    })
+  } catch (error) {
+    console.error('Failed to start MSW:', error)
   }
 
   // Render React app
