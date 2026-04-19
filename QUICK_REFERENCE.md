@@ -330,24 +330,24 @@ button { flex: 1; }
 
 ## Performance Tips
 
-1. ✅ Use `transform` for animations (GPU accelerated)
-2. ✅ Avoid `box-shadow` on hover if heavy
-3. ✅ Use `will-change: transform` sparingly
-4. ✅ Prefer `opacity` over `display` for visibility
-5. ✅ Debounce resize listeners
-6. ✅ Lazy load large grids
-7. ✅ Use CSS containment for complex components
+1. Use `transform` for animations (GPU accelerated)
+2. Avoid `box-shadow` on hover if heavy
+3. Use `will-change: transform` sparingly
+4. Prefer `opacity` over `display` for visibility
+5. Debounce resize listeners
+6. Lazy load large grids
+7. Use CSS containment for complex components
 
 ## Accessibility Checklist
 
-- ✅ Color contrast ratio ≥ 4.5:1 for text
-- ✅ Focus states visible (outline or glow)
-- ✅ ARIA labels where needed
-- ✅ Semantic HTML (button, label, form)
-- ✅ Keyboard navigation works
-- ✅ Touch targets ≥ 44x44px on mobile
-- ✅ Disabled state clearly visible
-- ✅ Error messages linked to inputs (aria-describedby)
+- Color contrast ratio ≥ 4.5:1 for text
+- Focus states visible (outline or glow)
+- ARIA labels where needed
+- Semantic HTML (button, label, form)
+- Keyboard navigation works
+- Touch targets ≥ 44x44px on mobile
+- Disabled state clearly visible
+- Error messages linked to inputs (aria-describedby)
 
 ## CSS Variable Template
 

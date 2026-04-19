@@ -1,37 +1,24 @@
 {
-  "name": "ui",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "skipwaste",
+  "version": "1.0.0",
+  "description": "A complete QA-focused skip waste booking flow application with mock APIs using MSW (Mock Service Worker).",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qambongo/Skip-Waste-Project.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qambongo/Skip-Waste-Project/issues"
+  },
+  "homepage": "https://github.com/qambongo/Skip-Waste-Project#readme",
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "@playwright/test": "^1.59.1",
-    "@types/node": "^24.12.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "msw": "^2.13.4",
-    "typescript": "~6.0.2",
-    "typescript-eslint": "^8.58.0",
-    "vite": "^8.0.4"
-  },
-  "msw": {
-    "workerDirectory": [
-      "public"
-    ]
+    "@playwright/test": "^1.59.1"
   }
 }
